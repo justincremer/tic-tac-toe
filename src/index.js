@@ -78,8 +78,8 @@ const Board = () => {
 		if (!data[i] && !winner) {
 			let copy = data;
 			copy[i] = current;
-			
 			setData(copy);
+			
 			if (!winner)
 				if (checkWin())
 					setWinner(current);
